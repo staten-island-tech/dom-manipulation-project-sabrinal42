@@ -1,16 +1,34 @@
 const DOMSelectors = {
-  button: document.getElementById("btn"),
-  text: document.querySelector("#text"),
-  box: document.getElementById("big-black-box"),
-  points: document.querySelectorAll(".point"),
+  enter: document.getElementById("enter"),
+  clear: document.getElementById("clear"),
+  name: document.getElementById("name"),
+  div: document.getElementById("container"),
+  results: document.getElementById("results"),
 };
 
-function backgroundAndText(background, text) {
-  background.style.backgroundColor = "red";
-  text.innerHTML = "This is now a big red box";
-  text.style.fontSize = "40px";
+const eraList = [
+  "<P>${user.name}, you are in your midnights era</P>",
+  "<P>${user.name}, you are in your lover era</P>",
+  "<P>${user.name}, you are in your fearless era</P>",
+  "<P>${user.name}, you are in your reputation era</P>",
+];
+
+enter.addEventListener("click", displayera);
+var count = 0;
+function displayera() {
+  results.innerHTML = eraList[count];
+  count++;
+  if (count == eraList.length) {
+    count = 0;
+  }
 }
 
-DOMSelectors.button.addEventListener("click", function () {
-  backgroundAndText(DOMSelectors.box, DOMSelectors.text);
-});
+clear.addEventListener("click", clearboth);
+function clearboth() {
+  DOMSelectors.name.value = "";
+}
+
+trash.addEventListener("trash", trashy);
+function trashy() {
+  DOMSelectors.results.value = "";
+}
