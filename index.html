@@ -1,24 +1,37 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>taylor era</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="container">
-      <h1>input ur name to find ur taylor swift era</h1>
-      <label class="yes" for="name">name:</label>
-      <input type="text" id="name"/>
-      <label class="yes" for="year">year born</label>
-      <input type="text" id="year"/>
 
-      <button id="enter">enter</button>
-     
-      <br>
-      <p id="results"></p>
-      <script src="script.js"></script>
-    </div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        album builder
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>what are u listening to?</h1>
+    <section class="form-parent">
+        <form id="form">
+            <div class="form-inputs">
+                <div class="form-input">
+                    <label class= "words" for="title">song title: </label>
+                    <input type="text" id="title" class="text-box" required>
+                </div>
+                <div class="form-inputs">
+                  <div class="form-input">
+                      <label class= "words" for="artist">artist name: </label>
+                      <input type="text" id="artist" class="text-box" required>
+                  </div>     
+            <div class="hero-form-input">
+                <input type="submit" value="submit" class="btn">
+            </div>
+        </form>
+    </section>
+    <section class="display" id="display">
+    </section>
+    <script src="script.js" type="module"></script>
+</body>
+
 </html>

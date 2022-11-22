@@ -1,23 +1,17 @@
 body{
     background-color:rgb(244, 220, 224); 
 }
-#enter{
-    background-color:rgb(170, 213, 189);
-    margin: 2%;
-}
-#clear{
-    background-color:rgb(231, 171, 181);
-
-}
-
 h1{
-    margin-left: 5%; margin-top: 4%;
+    font-size: 30px;margin-left: 2%; 
 }
-p{
-    margin-left: 5%;
-}
-.yes{
-    font-size: 20px;
-    margin-left: 5% ; margin-right: 1% ;
+h2, h3{
+    font-size: 24px; margin-left: 2%;
 }
 
+.words{
+    font-size: 24px; margin-left: 2%; 
+}
+
+.btn{
+    font-size: 15px; margin-left: 2%; margin-top:5%;
+}
