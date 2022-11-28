@@ -5,7 +5,7 @@ h1{
     font-size: 30px;margin-left: 2%; 
 }
 h2, h3{
-    font-size: 24px; margin-left: 2%;
+    font-size: 24px; margin-left: 1em; margin-bottom: 0;
 }
 
 .words{
@@ -13,5 +13,13 @@ h2, h3{
 }
 
 .btn{
-    font-size: 15px; margin-left: 2%; margin-top:5%;
+    font-size: 15px; margin-left: 2%; margin-top:1%; border-radius: .5em;
+}
+
+#clear{
+    margin: 1em;
+}
+#card{
+    background-color: rgb(216, 174, 238) ; width: 20em; margin: 2%; 
+    border-style: solid; border-width:2px; border-color:rgb(216, 174, 238);border-radius: 1em;
 }
